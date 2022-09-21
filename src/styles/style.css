@@ -21,16 +21,19 @@
   }
 
   header{
+    width: 100%;
     display: flex;
-    flex-direction:column;
-    width: 70%;
-    position: relative;
-    left: 50%;
-    top: 4rem;
-    transform: translateX(-50%);
     align-items: center;
     justify-content: center;
-    background: rgb(232, 232, 232);
+    margin-top: 4rem;
+  }
+
+  .wrapper-header{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
     color: var(--Grayish-Blue);
   }
 
@@ -45,8 +48,8 @@
     background:rgba(204, 204, 204, 0.568);
     display: flex;
     align-items:center;
-    justify-content: space-around;
-    gap: 1rem;
+    justify-content: center;
+    gap: 1.9rem;
   }
 
   .wrapper-button > p {
@@ -102,4 +105,84 @@
     background: var(--Light-Gradient);
   }
 
+  main{
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrapper-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card{
+    width: 88%;
+    height: 28.3rem;
+    background: #fff;
+    border-radius: .4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card > h3{
+    color: var(--Dark-Grayish-Blue);
+    opacity: 80%;
+    margin: 2.1rem 0 0 0;
+  }
+
+  .price{
+    display: flex;
+    align-items: center;
+    margin: 1.3rem 0 0 0 ;
+    gap: .5rem;
+    color: var(--Dark-Grayish-Blue);
+  }
+
+  .price > h2{
+    font-size: 2.3rem;
+  }
+
+  .price > h1{
+    font-size: 4.3rem;
+  }
+
+  .details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 1.8rem;
+  }
+  
+  .details b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .95rem;
+    width: 80%;
+    color: var(--Grayish-Blue);
+    border-top: 1px solid var(--Light-Grayish-Blue);
+    padding: 1rem;
+  }
+
+  .details b:last-of-type{
+    border-top: 1px solid var(--Light-Grayish-Blue);
+    border-bottom: 1px solid var(--Light-Grayish-Blue);
+  }
+
+  .card > a{
+    margin-top: 2rem;
+    padding: .8rem 5rem;
+    background: linear-gradient(to right,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    text-decoration: none;
+    color: #fff;
+    border-radius: .5rem;
+    font-size: .9rem;
+  }
 }
