@@ -213,4 +213,26 @@
     color: #fff;
     border-radius: .5rem;
     font-size: .9rem;
+}
+
+@media screen and (min-width: 1440px){
+  .wrapper-main{
+    flex-direction: row;
   }
+  
+  .wrapper-main{
+    gap: 0;
+  }
+
+  .card{
+    width: 22rem;
+  }
+
+  .card:nth-child(2){
+    height: 31.1rem;
+  }
+
+  .card:nth-child(2) > a{
+    margin-top: 3.4rem;
+  }
+}
